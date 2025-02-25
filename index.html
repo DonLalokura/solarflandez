@@ -48,6 +48,18 @@
         }
 
         /* Estilo para el contenedor con el GIF */
+        .gif-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .gif-container img {
+            width: 150px;
+        }
+
+        /* Estilo para el contenido */
         .content-container {
             display: flex;
             align-items: center;
@@ -60,6 +72,11 @@
     </style>
 </head>
 <body>
+    <!-- GIF fuera de las secciones, en la parte superior izquierda -->
+    <div class="gif-container">
+        <img src="images/flare.gif" alt="Descripción del GIF" />
+    </div>
+
     <header>
         SolarFlandez 
     </header>
@@ -72,8 +89,6 @@
     <section id="publicaciones">
         <h2>My papers</h2>
         <div class="content-container">
-            <!-- Imagen GIF a la izquierda -->
-            <img src="images/flare.gif" alt="Descripción del GIF" width="150" />
             <ul>
                 <li><a href="https://doi.org/10.3847/1538-4357/ada60e" target="_blank">
                     A 22 yr Cycle of the Network Topology of Solar Active Regions
@@ -98,3 +113,4 @@
     </footer>
 </body>
 </html>
+
